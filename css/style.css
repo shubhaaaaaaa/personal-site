@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 100px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5.625rem;
+}
+
+.pro {
+  font-size: 2rem;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.profile p {
+  text-align: center;
+  margin: 10px 200px 50px 200px;
+}
+
+.profile img {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.topContainer {
+  position: relative;
+  background-color: #C9E9F6;
+  height: 100;
+  line-height: 60px;
+}
+
+.topCloud {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+
+.bottomCloud {
+  position: absolute;
+  left: 80px;
+  top: 150px;
+}
+
+.scenery {
+  height: 100%;
+}
+
+.skills {
+  margin-top: 50px;
+}
+
+.skill-row {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.skill-row1 {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+
+.skill-row p {
+  margin-left: 50px;
+}
+
+.logoleft {
+  float: left;
+  margin-right: 50px;
+  margin-top: 10px;
+height: 100px;
+}
+
+.logoright {
+  float: right;
+  margin-top: 10px;
+  margin-left: 50px;
+height: 100px;
+}
