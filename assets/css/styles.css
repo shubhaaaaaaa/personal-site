@@ -1134,6 +1134,10 @@ span.section__subtitle {
   .home__description {
     text-align: center;
   }
+
+  .swiper-portfolio-icon{
+    display: none;
+  }
 }
 
 /* For medium devices */
