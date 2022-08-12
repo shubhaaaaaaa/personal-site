@@ -811,16 +811,16 @@ span.section__subtitle {
 }
 
 .swiper-portfolio-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--first-color);
 }
 
 .swiper-button-prev {
-  left: -0.5rem;
+  left: -1.5rem;
 }
 
 .swiper-button-next {
-  right: -0.5rem;
+  right: -1.5rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
