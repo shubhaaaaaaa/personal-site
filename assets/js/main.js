@@ -215,7 +215,7 @@ themeButton.addEventListener("click", () => {
 
   var header = document.getElementById("header");
   var toggled;
-  var threshold = 200;
+  var threshold = 150;
 
   var checkScroll = function () {
     curScroll = w.scrollY || doc.scrollTop;
