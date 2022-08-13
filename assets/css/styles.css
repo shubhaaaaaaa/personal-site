@@ -669,6 +669,9 @@ span.section__subtitle {
   display: block;
 }
 
+.qualification__button.qualification__active {
+  color: var(--first-color);
+}
 /*==================== SERVICES ====================*/
 
 .services__container {
