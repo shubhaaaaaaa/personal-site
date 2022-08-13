@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -115,7 +115,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -176,13 +176,18 @@ img {
   gap: 1.5rem;
 }
 
-.header {
+#header {
+  top: 0;
   width: 100%;
   position: fixed;
-  bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  transition: all 0.3s ease;
+}
+
+#header.hide {
+  top: -56px;
 }
 
 /*==================== NAV ====================*/
@@ -194,8 +199,8 @@ img {
   align-items: center;
 }
 
-.nav__logo{
-  font-family: 'Courgette', cursive;
+.nav__logo {
+  font-family: "Courgette", cursive;
   font-size: 1.5rem;
 }
 
@@ -411,7 +416,7 @@ img {
 }
 
 /*==================== ABOUT ====================*/
-section.about{
+section.about {
   padding-top: 0;
 }
 
@@ -541,7 +546,7 @@ span.section__subtitle {
 .skills__react {
   width: 40%;
 }
-.skills__angular{
+.skills__angular {
   width: 40%;
 }
 .skills__jquery {
@@ -1073,8 +1078,8 @@ span.section__subtitle {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 500px) {
-  .home__scroll{
-      display: none;
+  .home__scroll {
+    display: none;
   }
   .container {
     margin-left: var(--mb-1);
@@ -1138,7 +1143,7 @@ span.section__subtitle {
     text-align: center;
   }
 
-  .swiper-portfolio-icon{
+  .swiper-portfolio-icon {
     display: none;
   }
 }
@@ -1170,10 +1175,6 @@ span.section__subtitle {
   .container {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  body {
-    margin: 0;
   }
 
   .section__subtitle {
