@@ -605,6 +605,12 @@ span.section__subtitle {
   transform: rotate(-180deg);
 }
 
+.skills__jquery,
+.skills__sql{
+  margin-bottom: 2rem;
+}
+
+
 /*==================== QUALIFICATION ====================*/
 
 .qualification__tabs {
