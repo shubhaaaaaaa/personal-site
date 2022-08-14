@@ -388,15 +388,13 @@ img {
 }
 
 .button--white {
-  background-color: #fff;
-  color: var(--first-color-second);
-  border: 1px solid var(--first-color-second);
-  opacity: 70%;
+  background-color: var(--first-color);
+  color: white;
+  border: 0.2px solid var(--first-color);
 }
 
 .button--white:hover {
-  background-color: #fff;
-  opacity: 100%;
+  cursor: pointer;
 }
 
 .button--flex {
@@ -471,7 +469,7 @@ span.section__subtitle {
 .skills__header {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: 2rem;
   cursor: pointer;
 }
 
@@ -515,7 +513,7 @@ span.section__subtitle {
   font-weight: var(--font-medium);
 }
 .skills__content {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .skills__bar,
@@ -605,11 +603,6 @@ span.section__subtitle {
   transform: rotate(-180deg);
 }
 
-.skills__jquery,
-.skills__sql{
-  margin-bottom: 2rem;
-}
-
 
 /*==================== QUALIFICATION ====================*/
 
@@ -623,6 +616,8 @@ span.section__subtitle {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
+  padding-right: 3.5rem;
+  padding-bottom: 1rem;
 }
 
 .qualification__button:hover {
@@ -683,6 +678,10 @@ span.section__subtitle {
 .qualification__button.qualification__active {
   color: var(--first-color);
 }
+
+.qualification__container{
+  padding-left: 3rem;
+ }
 /*==================== SERVICES ====================*/
 
 .services__container {
@@ -796,7 +795,7 @@ span.section__subtitle {
 }
 
 .portfolio__img {
-  width: 300px;
+  aspect-ratio: 16/9;
   border-radius: 0.5rem;
   justify-self: center;
   transition: transform 0.2s;
@@ -942,6 +941,7 @@ span.section__subtitle {
 .mySwiper .swiper-pagination-testimonial {
   bottom: 0;
 }
+
 
 /*==================== CONTACT ME ====================*/
 
@@ -1152,6 +1152,12 @@ span.section__subtitle {
   .swiper-portfolio-icon {
     display: none;
   }
+  .portfolio__img {
+    width: 290px;
+   }
+
+
+
 }
 
 /* For medium devices */
@@ -1174,6 +1180,9 @@ span.section__subtitle {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
+  }
+  .portfolio__img {
+   width: 400px;
   }
 }
 
@@ -1276,7 +1285,7 @@ span.section__subtitle {
   }
 
   .portfolio__img {
-    width: 320px;
+    width: 420px;
   }
 
   .portfolio__content {
@@ -1390,4 +1399,33 @@ span.section__subtitle {
   z-index: -100000000000000000;
   top: 0;
   left: 0
+}
+
+/*==================== Scroll Up  ====================*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: .5;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover{
+  background-color: var(--first-color-alt);
+  opacity: 1;
+}
+
+.scrollup__icon{
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* show scroll */
+
+.show-scroll{
+  bottom: 5rem;
 }

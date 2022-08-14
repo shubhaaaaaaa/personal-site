@@ -204,10 +204,6 @@ themeButton.addEventListener("click", () => {
   var doc = document.documentElement;
   var w = window;
 
-  /*
-  define four variables: curScroll, prevScroll, curDirection, prevDirection
-  */
-
   var curScroll;
   var prevScroll = w.scrollY || doc.scrollTop;
   var curDirection = 0;
@@ -216,7 +212,7 @@ themeButton.addEventListener("click", () => {
   var header = document.getElementById("header");
   var toggled;
   var threshold = 150;
-
+  
   var checkScroll = function () {
     curScroll = w.scrollY || doc.scrollTop;
     if (curScroll > prevScroll) {
@@ -226,11 +222,11 @@ themeButton.addEventListener("click", () => {
       //scrolled up
       curDirection = 1;
     }
-
+    
     if (curDirection !== prevDirection) {
       toggled = toggleHeader();
     }
-
+    
     prevScroll = curScroll;
     if (toggled) {
       prevDirection = curDirection;
@@ -251,3 +247,11 @@ themeButton.addEventListener("click", () => {
 
   window.addEventListener("scroll", checkScroll);
 })();
+
+/*==================== SHOW SCROLL TOP ====================*/ 
+function scrollUp(){
+  const scrollUp = document.getElementById('scroll-up');
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-Up class
+  if(this.scrollY >= 1000) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
