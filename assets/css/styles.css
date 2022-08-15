@@ -1144,7 +1144,9 @@ span.section__subtitle {
     width: 290px;
    }
 
-
+   .home__data {
+    padding-left: 1.8rem;
+  }
 
 }
 
