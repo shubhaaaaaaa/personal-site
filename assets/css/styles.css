@@ -322,6 +322,7 @@ img {
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
+  margin-top: var(--mb-0-75);
 }
 
 .home__description {
@@ -360,7 +361,7 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 0.3rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
 }
@@ -425,13 +426,13 @@ section.about {
 }
 
 .about__info-title {
-  font-size: var(--h2-font-size);
+  font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
 
 .about__info-name {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .about__info-title,
@@ -520,7 +521,7 @@ span.section__subtitle {
 }
 
 .skills__html {
-  width: 98%;
+  width: 68%;
 }
 
 .skills__css {
@@ -1154,7 +1155,7 @@ span.section__subtitle {
 
 @media screen and (min-width: 500px) {
   .home__content {
-    grid-template-columns: max-content 1fr 1fr;
+    grid-template-columns: max-content 1fr 1.2fr;
   }
 
   .home__data {
