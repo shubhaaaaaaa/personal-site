@@ -21,10 +21,16 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    
+    <!--==================== GSAP ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
 
     <title>Shubha Khadgi</title>
   </head>
   <body>
+    <div id="cursor"></div>
     <div id="particles-js"></div>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -131,7 +137,7 @@
               </svg>
             </div>
             <div class="home__data">
-              <h1 class="home__title">Hello,<br> I'm Shubha.</h1>
+              <h1 class="home__title"></h1>
               <h3 class="home__subtitle">
                 A web developer with a creative flair
               </h3>
@@ -149,7 +155,7 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2><br>
+        <h2 class="section__title box">About Me</h2><br>
         <div class="about__container container grid">
           <img src="assets/img/about.jpg" alt="" class="about__img">
 
@@ -191,7 +197,7 @@
         <div class="skills__container container grid">
           <div>
             <!--==================== SKILLS 1 ====================-->
-            <div class="skills__content skills__close">
+            <div class="skills__content left skills__close">
               <div class="skills__header">
                 <i class="uil uil-brackets-curly skills__icon"></i>
 
@@ -257,7 +263,7 @@
             </div>
 
                           <!--==================== SKILLS 2 ====================-->
-            <div class="skills__content skills__close">
+            <div class="skills__content right skills__close">
               <div class="skills__header">
                 <i class="uil uil-swatchbook skills__icon"></i>
 
@@ -334,7 +340,7 @@
 
             
             <!--==================== SKILLS 2 ====================-->
-            <div class="skills__content skills__close">
+            <div class="skills__content left skills__close">
               <div class="skills__header">
                 <i class="uil uil-server-network skills__icon"></i>
 
@@ -428,7 +434,7 @@
             <div class="qualification__content qualification__active" data-content id="work">
               <!--==================== QUALIFICATION 1 ====================-->
               <div class="qualification__data">
-                <div>
+                <div class="qualification__left">
                   <h3 class="qualification__title">React Developer</h3>
                   <span class="qualification__subtitle">Freelance</span>
                   <div class="qualification__calender">
@@ -452,7 +458,7 @@
                   <span class="qualification__line"></span>
                 </div>
 
-                <div>
+                <div class="qualification__right">
                   <h3 class="qualification__title">UI/UX Designer</h3>
                   <span class="qualification__subtitle">Falsebug Technology</span>
                   <div class="qualification__calender">
@@ -464,7 +470,7 @@
 
             <!--==================== QUALIFICATION 1 ====================-->
             <div class="qualification__data">
-              <div>
+              <div class="qualification__left">
                 <h3 class="qualification__title">Web Developer & Creative Designer</h3>
                 <span class="qualification__subtitle">Longtail E-media</span>
                 <div class="qualification__calender">
@@ -484,7 +490,7 @@
                   <div class="qualification__content " data-content id="education">
                     <!--==================== QUALIFICATION 1 ====================-->
                     <div class="qualification__data">
-                      <div>
+                      <div class="qualification__left">
                         <h3 class="qualification__title">JavaScript Course</h3>
                         <span class="qualification__subtitle">Roshan Shrestha</span>
                         <div class="qualification__calender">
@@ -508,7 +514,7 @@
                         <span class="qualification__line"></span>
                       </div>
 
-                      <div>
+                      <div class="qualification__right">
                         <h3 class="qualification__title">Fundamentals of React</h3>
                         <span class="qualification__subtitle">Meta (Coursera)</span>
                         <div class="qualification__calender">
@@ -520,7 +526,7 @@
 
                     <!--==================== QUALIFICATION 3 ====================-->
                     <div class="qualification__data">
-                      <div>
+                      <div class="qualification__left">
                         <h3 class="qualification__title">BIM</h3>
                         <span class="qualification__subtitle">Tribhuvan University</span>
                         <div class="qualification__calender">
@@ -582,7 +588,7 @@
         <span class="section__subtitle">What I offer</span>
         <div class="services__Container container grid">
                 <!--==================== SERVICES 1====================-->
-                <div class="services__content">
+                <div class="services__content left">
                   <div>
                     <i class="uil uil-web-grid services__icon"></i>
                     <h3 class="services__title">Frontend Development</h3>
@@ -616,7 +622,7 @@
                   </div>
                 </div>
                 <!--==================== SERVICES 2====================-->
-                <div class="services__content">
+                <div class="services__content right">
                   <div>
                     <i class="uil uil-pen services__icon"></i>
                     <h3 class="services__title">UI/UX Design</h3>
@@ -920,7 +926,7 @@
         <span class="section__subtitle">Get in touch</span>
 
         <div class="contact___container container grid grid-container">
-          <div class="grid-child">
+          <div class="grid-child left">
             <form action="mailto:shubhakhadgi007@gmail.com" method="post" class="contact__form grid">
               <div class="contact__inputs grid">
                 <div class="contact__content">
@@ -942,7 +948,7 @@
               </div>
             </form>
             </div>
-          <div class="grid-child ">
+          <div class="grid-child right">
           <p>Want to work with me, or just want to say hello? Feel free to email me or leave a message in any of my social media platforms. <br><br></p>  
             <div class="contact__information ">
               <i class="uil uil-phone contact__icon"></i>
@@ -1015,5 +1021,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/gsap.js"></script>
   </body>
 </html>

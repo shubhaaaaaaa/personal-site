@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
+/*==================== Cursor ====================*/
+#cursor{
+  height: 20px;
+  width: 20px;
+  background-color: var(--first-color-alt);
+  border-radius: 50%;
+  position:fixed;
+  z-index: 101;
+  opacity: 0.5;
+}
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -315,6 +325,9 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
+}
+.home__title span{
+  display: inline-block;
 }
 
 .home__subtitle {
@@ -1155,7 +1168,7 @@ span.section__subtitle {
 
 @media screen and (min-width: 500px) {
   .home__content {
-    grid-template-columns: max-content 1fr 1.2fr;
+    grid-template-columns: max-content 1fr 2fr;
   }
 
   .home__data {
