@@ -190,14 +190,13 @@ tl2.from(".qualification__data .qualification__right",{
 //Services section
 function servicesAnimation(){
 const tl1 = gsap.timeline();
-const tl2 = gsap.timeline();
 
 ScrollTrigger.create({
     animation:tl1,
-    trigger: '.services',
-    scrub:1,
+    trigger: '.services__content',
     start:'top 90%',
-    end:'700px 100%',
+    end:'bottom 40%',
+    scrub:1,
 })
 
 tl1.from(".services .section__title, .services .section__subtitle",{
@@ -206,25 +205,6 @@ tl1.from(".services .section__title, .services .section__subtitle",{
     opacity: 0
 })
 
-ScrollTrigger.create({
-    animation:tl2,
-    trigger: '.services',
-    scrub:1,
-    start:'top 50%',
-    end:'bottom 100%',
-})
-
-tl2.from(".services__content.left",{
-    x : -30,
-    duration:1,
-    opacity: 0
-})
-
-tl2.from(".services__content.right",{
-    x : 30,
-    duration:1,
-    opacity: 0
-})
 }
 
 //Portfolio section
@@ -296,6 +276,23 @@ function contactAnimation(){
     
 }
 
+//Project section
+function projectAnimation(){
+    const tl1 = gsap.timeline()
+    ScrollTrigger.create({
+        animation:tl1,
+        trigger: '.project',
+        start: "top 90%",
+        end: "bottom 60%",
+        scrub:1
+    })
+    
+    tl1.to(".project",{
+        scale:1.3
+    })
+    
+}
+
 
 heroAnimation();
 textAnimation();
@@ -305,3 +302,4 @@ servicesAnimation();
 portfolioAnimation();
 testimonialAnimation();
 contactAnimation();
+projectAnimation();
