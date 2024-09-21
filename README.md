@@ -6,10 +6,14 @@ This is Shubha's official website.
 I have used particles.js for the background and GSAP for smooth website animation.
 
 **Light Mode**
+
 <img src="https://github.com/shubhaaaaaaa/MyPersonal_Site/blob/main/assets/img/s1.png" alt="screenshot" width="600"/>
 
+
 **Dark Mode**
+
 <img src="https://github.com/shubhaaaaaaa/MyPersonal_Site/blob/main/assets/img/s2.png" alt="screenshot" width="600"/>
+
 
 ## Feedback
 
