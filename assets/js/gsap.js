@@ -296,10 +296,10 @@ function projectAnimation(){
 
 heroAnimation();
 textAnimation();
-aboutmeAnimation();
-qualificationAnimation();
-servicesAnimation();
-portfolioAnimation();
-testimonialAnimation();
-contactAnimation();
-projectAnimation();
+// aboutmeAnimation();
+// qualificationAnimation();
+// servicesAnimation();
+// portfolioAnimation();
+// testimonialAnimation();
+// contactAnimation();
+// projectAnimation();
